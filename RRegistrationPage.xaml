@@ -1,0 +1,136 @@
+﻿<Page x:Class="BloodBanker.RRegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="380"
+      Title="RRegistrationPage">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="NewButtonTheme.xaml" />
+                <!--<ResourceDictionary Source="en-US.xaml" />
+                <ResourceDictionary Source="Theme1.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid Height="450">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="410" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Border Grid.RowSpan="12" Grid.ColumnSpan="2" Style="{DynamicResource ResourceKey=Theme}" />
+        <Grid Visibility="Visible" Grid.Row="0" Height="410">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="{DynamicResource ResourceKey=RecipientRegTitle}" Grid.ColumnSpan="2"
+                       FontWeight="Bold"
+                       FontFamily="helvetica"
+                       FontSize="21"
+                       Foreground="Black"
+                       HorizontalAlignment="Center" Margin="10,8,10,9"
+                       VerticalAlignment="Center" Height="24" Width="360" />
+            <TextBlock Grid.Row="2" Text="{DynamicResource ResourceKey=DateOfBirth}"
+                       FontWeight="Bold"
+                       FontFamily="helvetica"
+                       FontSize="19"
+                       Foreground="Black"
+                       HorizontalAlignment="Center" Margin="10,9,26,8"
+                       VerticalAlignment="Center" Height="24" Width="154" />
+
+            <TextBlock Grid.Row="4" Text="{DynamicResource ResourceKey=HospitalSelect}"
+                       FontWeight="Bold"
+                       FontFamily="helvetica"
+                       FontSize="19"
+                       Foreground="Black"
+                       HorizontalAlignment="Center" Margin="10,8,10,9"
+                       VerticalAlignment="Center" Height="24" Width="170" />
+            <TextBlock Grid.Row="6" Text="{DynamicResource ResourceKey=Diseases}"
+                       FontWeight="Bold"
+                       FontFamily="helvetica"
+                       FontSize="19"
+                       Foreground="Black"
+                       HorizontalAlignment="Center" Margin="10,9,26,8"
+                       VerticalAlignment="Center" Height="24" Width="154" />
+
+
+            <TextBox x:Name="dob" Grid.Row="2" Grid.Column="1"
+                     Text="{DynamicResource ResourceKey=DatePicker}"
+                     FontFamily="Helvetica"
+                     FontWeight="Bold"
+                     FontSize="20"
+                     HorizontalAlignment="Center"
+                     Foreground="White"
+                     Background="Transparent"
+                     BorderThickness="0.5"
+                     Width="171"
+                     HorizontalContentAlignment="Left"
+                     Opacity="0.5"
+                     Height="25"
+                     Margin="9,10,10,10"
+                     GotKeyboardFocus="Dob_GotKeyboardFocus"
+                     LostKeyboardFocus="Dob_LostKeyboardFocus" />
+
+
+            <ComboBox x:Name="hospital" Grid.Row="4" Grid.Column="1" FontFamily="Helvetica"
+                      FontWeight="Bold" FontSize="20"
+                      HorizontalAlignment="Center"
+                      Foreground="Black"
+                      Background="Transparent"
+                      BorderThickness="0.5"
+                      Width="171"
+                      HorizontalContentAlignment="Left"
+                      Opacity="0.5"
+                      Margin="9,10,10,0"
+                      Text="{DynamicResource ResourceKey=Select}" IsReadOnly="True" IsEditable="True" />
+
+
+            <TextBox x:Name="disease" Grid.Row="7" Grid.Column="0" FontFamily="Helvetica"
+                     Grid.ColumnSpan="2"
+                     Grid.RowSpan="3"
+                     FontWeight="Bold"
+                     Text="{DynamicResource ResourceKey=Enter}"
+                     FontSize="20"
+                     HorizontalAlignment="Stretch"
+                     Foreground="White"
+                     Background="Transparent"
+                     BorderThickness="0.5"
+                     Width="360"
+                     HorizontalContentAlignment="Left"
+                     Opacity="10"
+                     Margin="10"
+                     GotKeyboardFocus="Disease_GotKeyboardFocus"
+                     LostKeyboardFocus="Disease_LostKeyboardFocus" />
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Style="{DynamicResource ResourceKey=NewButton}"
+                    Content="{DynamicResource ResourceKey=RSP_Back}" Width="100" Height="30"
+                    RenderTransformOrigin="0.489,2.5" Click="BackClick" />
+            <Button Grid.Column="1" Style="{DynamicResource ResourceKey=NewButton}"
+                    Content="{DynamicResource ResourceKey=Confirm}" Width="100" Height="30"
+                    RenderTransformOrigin="0.489,2.5" Click="ConfirmClick" />
+        </Grid>
+    </Grid>
+</Page>

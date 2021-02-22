@@ -1,0 +1,100 @@
+﻿<Page x:Class="BloodBanker.RegisterSelectPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="380"
+      Title="RegisterSelectPage">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="NewButtonTheme.xaml" />
+                <!-- <ResourceDictionary Source="en-US.xaml"/>--><!--
+                <ResourceDictionary Source="Theme1.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Border Style="{DynamicResource ResourceKey=Theme}" />
+
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="215">
+                <StackPanel Orientation="Horizontal">
+
+                    <Button Margin="10 0 0 0" BorderThickness="0" Height="34" Click="Theme1ButtonClick" Width="30">
+                        <Image Source="Images/Theme1.png"/>
+                    </Button>
+                    <Button Margin="5 0 0 0" BorderThickness="0" Height="34" Click="Theme2ButtonClick" Width="30">
+                        <Image Source="Images/Theme2.png"/>
+                    </Button>
+                    <Button Margin="5 0 0 0" BorderThickness="0" Height="34" Click="Theme3ButtonClick" Width="30">
+                        <Image Source="Images/Theme3.png"/>
+                    </Button>
+                    <Button Margin="5 0 0 0" Background="Transparent" BorderThickness="0" Height="34" Click="EnglishButtonClick" Width="30">
+                        <Image Source="Images/english.png" Height="24"/>
+                    </Button>
+                    <Button Margin="5 0 0 0" Background="Transparent" BorderThickness="0" Height="34" Click="SerbianButtonClick" Width="30">
+                        <Image Source="Images/serbian.png" Height="24"/>
+                    </Button>
+                    <Button Margin="169 0" Style="{DynamicResource ResourceKey=NewButton}" Height="34" Content="X"  Click="ExitButtonClick" Width="30"/>
+                </StackPanel>
+
+                <Image Source="Images/ChooseImage.png" Margin="109,0,100,0"
+                       RenderTransformOrigin="0.556,-0.697"
+                       VerticalAlignment="Center" Height="95" />
+                <TextBlock Text="{DynamicResource ResourceKey=RSP_Question}"
+                           FontWeight="Light"
+                           FontFamily="helvetica"
+                           FontSize="22"
+                           Foreground="Black"
+                           TextAlignment="Center"
+                           HorizontalAlignment="Center" Margin="47,0,47,0"
+                           VerticalAlignment="Center" Height="35" Width="224" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" HorizontalAlignment="Stretch">
+                <Button Style="{DynamicResource NewButton}" Height="50" Click="IndividualClick">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                        <Image Source="Images/individualImage.png" Margin="0,0,0,0"
+                               VerticalAlignment="Center" HorizontalAlignment="Left" Height="46" Width="59"
+                               RenderTransformOrigin="0.508,0.648" />
+                        <TextBlock Text="{DynamicResource ResourceKey=RSP_Individual}"
+                                   FontWeight="Light"
+                                   FontFamily="helvetica"
+                                   FontSize="22"
+                                   Foreground="Black"
+                                   HorizontalAlignment="Center" Margin="0,0,0,0"
+                                   VerticalAlignment="Center" Height="24" Width="138" />
+                    </StackPanel>
+                </Button>
+
+                <Separator Height="10" />
+                <Button Style="{DynamicResource NewButton}" Height="50" Click="MedicalInstitutionClick">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                        <Image Source="Images/medicalImage.png" Margin="0,0,0,0"
+                               VerticalAlignment="Center" HorizontalAlignment="Left" Height="46" Width="59"
+                               RenderTransformOrigin="0.508,0.648" />
+                        <TextBlock Text="{DynamicResource ResourceKey=RSP_MedicalInstitution}"
+                                   FontWeight="Light"
+                                   TextWrapping="WrapWithOverflow"
+                                   FontFamily="helvetica"
+                                   FontSize="22"
+                                   Foreground="Black"
+                                   HorizontalAlignment="Center" Margin="0,0,0,0"
+                                   VerticalAlignment="Center" Height="24" Width="138" />
+                    </StackPanel>
+                </Button>
+                <Separator Height="35" />
+                <Button Style="{DynamicResource ResourceKey=NewButton}"
+                        Content="{DynamicResource ResourceKey=RSP_Back}" Width="100" Height="30"
+                        RenderTransformOrigin="0.489,2.5" Click="BackClick" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

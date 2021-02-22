@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:BloodBanker">
+    <Style TargetType="Border" x:Key="Theme">
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="Grid.RowSpan" Value="2" />
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush>
+                    <GradientStop Color="#7eed12" Offset="0.0" />
+                    <GradientStop Color="#e0c425" Offset="1" />
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

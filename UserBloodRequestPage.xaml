@@ -1,0 +1,114 @@
+﻿<Page x:Class="BloodBanker.UserBloodRequestPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="600"
+      Title="UserBloodRequestPage">
+
+    <!--<Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="en-US.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>-->
+    
+    <StackPanel Orientation="Horizontal">
+        <Grid x:Name="LeftGrid" Height="450" Width="300">
+            <Border Width="250" Height="50" BorderBrush="Black" BorderThickness="1" CornerRadius="10"
+                    HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20">
+                <Label Content="{DynamicResource ResourceKey=RequestBlood}" FontSize="25" FontWeight="Bold"
+                       HorizontalAlignment="Center" Foreground="Green" />
+            </Border>
+            <Label Content="{DynamicResource ResourceKey=SelectDonors}" FontSize="11" HorizontalAlignment="Left"
+                   Margin="0,100,0,0" />
+            <ComboBox Name="Req_List" Style="{x:Null}" Width="280" Height="35" DropDownClosed="Req_ComboBoxClosed"
+                      VerticalContentAlignment="Center" FontSize="12" Margin="8,131,12,277" />
+            <TextBox BorderThickness="0" TextWrapping="WrapWithOverflow"
+                     Text="{DynamicResource ResourceKey=SelectYourDonors}" FontSize="11" HorizontalAlignment="Left"
+                     Background="Transparent" Margin="0,200,0,217" />
+            <ComboBox Name="Reciv_List" Style="{x:Null}" Width="280" Height="35" DropDownClosed="Donate_ComboBoxClosed"
+                      VerticalContentAlignment="Center" FontSize="12" RenderTransformOrigin="0.508,1.936"
+                      Margin="8,240,12,162" />
+        </Grid>
+        <Separator BorderThickness="1.5" Background="Black" />
+        <Grid x:Name="RightGrid" Height="450" Width="300">
+            <Grid x:Name="Req" Visibility="Hidden">
+                <Border Width="250" Height="50" BorderBrush="Black" BorderThickness="1" CornerRadius="10"
+                        HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20">
+                    <Label Content="{DynamicResource ResourceKey=RequestBlood}" FontSize="25" FontWeight="Bold"
+                           HorizontalAlignment="Center" Foreground="Green" />
+                </Border>
+                <Grid Margin="0,40,0,0" HorizontalAlignment="Center" Width="auto" Height="auto">
+                    <Label Content="{DynamicResource ResourceKey=Name}" VerticalAlignment="Top" Margin="0,37,0,0"
+                           Grid.ColumnSpan="2" />
+                    <TextBox x:Name="D_Name" Style="{x:Null}" Width="280" Height="20" VerticalAlignment="Top"
+                             Margin="0,68,0,0" FontSize="11" HorizontalContentAlignment="Center"
+                             VerticalContentAlignment="Center" RenderTransformOrigin="0.495,2.544" Grid.ColumnSpan="2" />
+                    <Label Content="{DynamicResource ResourceKey=BloodGroup}" Margin="0,93,0,0" VerticalAlignment="Top"
+                           RenderTransformOrigin="0.532,1.959" Grid.ColumnSpan="2" />
+                    <TextBox x:Name="B_grp" Style="{x:Null}" Width="280" Height="20" VerticalAlignment="Top"
+                             Margin="0,124,0,0" FontSize="11" HorizontalContentAlignment="Center"
+                             VerticalContentAlignment="Center" Grid.ColumnSpan="2" />
+                    <Label Content="{DynamicResource ResourceKey=Email}" Margin="0,149,0,0" VerticalAlignment="Top"
+                           Grid.ColumnSpan="2" />
+                    <TextBox x:Name="Email" Style="{x:Null}" Width="280" Height="20" VerticalAlignment="Top"
+                             Margin="0,180,0,0" FontSize="11" HorizontalContentAlignment="Center"
+                             VerticalContentAlignment="Center" Grid.ColumnSpan="2" />
+                    <Label Content="{DynamicResource ResourceKey=Address}" Margin="0,205,0,0" VerticalAlignment="Top"
+                           Grid.ColumnSpan="2" />
+                    <TextBox x:Name="Address" Style="{x:Null}" Width="280" Height="20" VerticalAlignment="Top"
+                             Margin="0,236,0,0" FontSize="11" HorizontalContentAlignment="Center"
+                             VerticalContentAlignment="Center" Grid.ColumnSpan="2" />
+                    <Label Content="{DynamicResource ResourceKey=City}" Margin="0,261,0,0" VerticalAlignment="Top" />
+                    <TextBox x:Name="City" Style="{x:Null}" Width="280" Height="20" VerticalAlignment="Top"
+                             Margin="0,292,0,0" FontSize="11" HorizontalContentAlignment="Center"
+                             VerticalContentAlignment="Center" Grid.ColumnSpan="2" />
+                    <Button Style="{x:Null}" x:Name="BloodRequest" Width="200" Height="40" VerticalAlignment="Top"
+                            HorizontalAlignment="Center" Margin="38,338,42,0"
+                            Content="{DynamicResource ResourceKey=RequestBlood}" FontSize="12"
+                            Click="BloodRequest_Click" Grid.ColumnSpan="2" />
+                </Grid>
+            </Grid>
+            <Grid x:Name="Reciv" Visibility="Visible">
+                <Border Width="250" Height="50" BorderBrush="Black" BorderThickness="1" CornerRadius="10"
+                        HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20">
+                    <Label Content="{DynamicResource ResourceKey=RecievedBlood}" FontSize="25" FontWeight="Bold"
+                           HorizontalAlignment="Center" Foreground="Green" />
+                </Border>
+                <Grid Margin="0 40 0 0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="auto" Height="auto">
+                    <Label Content="{DynamicResource ResourceKey=OrderID}" Margin="0 37 0 0" VerticalAlignment="Top" />
+                    <TextBox x:Name="Reciv_Or_Id" Style="{x:Null}" Width="280" Height="20" VerticalAlignment="Top"
+                             Margin="0 68 0 0" FontSize="11" HorizontalContentAlignment="Center"
+                             VerticalContentAlignment="Center" />
+                    <Label Content="{DynamicResource ResourceKey=Name}" Margin="0 93 0 0" VerticalAlignment="Top" />
+                    <TextBox x:Name="Reciv_D_Name" Style="{x:Null}" Width="280" Height="20" VerticalAlignment="Top"
+                             Margin="0 126 0 0" FontSize="11" HorizontalContentAlignment="Center"
+                             VerticalContentAlignment="Center" />
+                    <Label Content="{DynamicResource ResourceKey=BloodGroup}" Margin="0 149 0 0"
+                           VerticalAlignment="Top" />
+                    <TextBox x:Name="Reciv_B_grp" Style="{x:Null}" Width="280" Height="20" VerticalAlignment="Top"
+                             Margin="0,175,0,0" FontSize="11" HorizontalContentAlignment="Center"
+                             VerticalContentAlignment="Center" />
+                    <Label Content="{DynamicResource ResourceKey=Hospital}" Margin="0,195,0,0" VerticalAlignment="Top" />
+                    <TextBox x:Name="Reciv_Hos" Style="{x:Null}" Width="280" Height="20" VerticalAlignment="Top"
+                             Margin="0,226,0,0" FontSize="11" HorizontalContentAlignment="Center"
+                             VerticalContentAlignment="Center" />
+                    <Label Content="{DynamicResource ResourceKey=RecieveDate}" Margin="0,251,0,0"
+                           VerticalAlignment="Top" />
+                    <TextBox x:Name="Reciv_Date" Text="{DynamicResource DatePicker}" Style="{x:Null}" Width="280"
+                             Height="20" VerticalAlignment="Top" Margin="0,277,0,0" FontSize="11"
+                             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                             GotKeyboardFocus="Reciv_Date_GotKeyboardFocus"
+                             LostKeyboardFocus="Reciv_Date_LostKeyboardFocus" />
+                    <Button Style="{x:Null}" x:Name="BloodRecived" Width="200" Height="40" VerticalAlignment="Top"
+                            HorizontalAlignment="Center" Margin="35,330,45,0"
+                            Content="{DynamicResource ResourceKey=RecieveBlood}" FontSize="12"
+                            Click="BloodRecived_Click" />
+                </Grid>
+            </Grid>
+        </Grid>
+    </StackPanel>
+</Page>

@@ -1,0 +1,153 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--EXCEPTIONS-->
+    <sys:String x:Key="LoginPageException">Login exception</sys:String>
+    <sys:String x:Key="RegistrationPageException">Registration exception</sys:String>
+    <sys:String x:Key="DonorRegistrationException">Donor registration exception</sys:String>
+    <sys:String x:Key="RecipientRegistrationException">Recipient registration exception</sys:String>
+    <sys:String x:Key="HospitalRegistrationException">Hospital registration exception</sys:String>
+    <sys:String x:Key="BBRegistrationException">Blood bank registration exception</sys:String>
+    <sys:String x:Key="StockRegistrationException">Stock registration exception</sys:String>
+    <sys:String x:Key="UpdatePhoneException">Update phone exception</sys:String>
+    <sys:String x:Key="UpdateWebsiteException">Update website exception</sys:String>
+    <sys:String x:Key="UpdateEmailException">Update email exception</sys:String>
+    <sys:String x:Key="UpdateAddressException">Update address exception</sys:String>
+    <sys:String x:Key="UpdateCityException">Update city exception</sys:String>
+    <sys:String x:Key="UpdateUsernameException">Update username exception</sys:String>
+    <sys:String x:Key="UpdatePasswordException">Update password exception</sys:String>
+    <sys:String x:Key="HomePageException">HomePage exception</sys:String>
+    <sys:String x:Key="OrdersUpdateException">Orders update exception</sys:String>
+    <sys:String x:Key="Exception">Exception</sys:String>
+
+
+    <!-- LOGIN_PAGE-->
+    <sys:String x:Key="UsernameLabel">Username</sys:String>
+    <sys:String x:Key="PasswordLabel">Password</sys:String>
+    <sys:String x:Key="LoginLabel">LOGIN</sys:String>
+    <sys:String x:Key="RegisterLabel">REGISTER</sys:String>
+    <sys:String x:Key="InvalidLoginLabel">Invalid username or password, please verify your credentials</sys:String>
+    <sys:String x:Key="EmptyLoginLabel">Enter both username and password</sys:String>
+    <sys:String x:Key="NotFoundLoginLabel">User or Medical Institution not found</sys:String>
+    <!--EXIT MESSAGE BOX-->
+    <sys:String x:Key="ExitQuestion">Do you want to exit?</sys:String>
+    <sys:String x:Key="Confirm">Confirm</sys:String>
+    <sys:String x:Key="Yes">Yes</sys:String>
+    <sys:String x:Key="No">No</sys:String>
+    <!--REGISTER SELECT PAGE-->
+    <sys:String x:Key="RSP_Question">Are you registering as?</sys:String>
+    <sys:String x:Key="RSP_Individual">Individual</sys:String>
+    <sys:String x:Key="RSP_MedicalInstitution">Institution</sys:String>
+    <sys:String x:Key="RSP_Back">Back</sys:String>
+    <!--INDIVIDUAL SELECT PAGE-->
+    <sys:String x:Key="Name">Name</sys:String>
+    <sys:String x:Key="SSN">SSN</sys:String>
+    <sys:String x:Key="Phone">Phone number</sys:String>
+    <sys:String x:Key="Email">E-mail</sys:String>
+    <sys:String x:Key="Address">Address</sys:String>
+    <sys:String x:Key="City">City</sys:String>
+    <sys:String x:Key="BloodGroup">Blood group</sys:String>
+    <sys:String x:Key="TypeOfUser">Type of user</sys:String>
+    <sys:String x:Key="Donor">Donor</sys:String>
+    <sys:String x:Key="Recepient">Recepient</sys:String>
+    <sys:String x:Key="Enter">Enter...</sys:String>
+    <sys:String x:Key="IncompleteReg">Not all fields are entered</sys:String>
+    <sys:String x:Key="UsernameUnavailable">Username isn't available</sys:String>
+    <sys:String x:Key="PhoneNumberInvalid">Phone number isn't valid</sys:String>
+    <!--DONOR REGISTRATION PAGE-->
+    <sys:String x:Key="DonorRegTitle">ENTER DONOR INFORMATION</sys:String>
+    <sys:String x:Key="DateOfBirth">Date of birth</sys:String>
+    <sys:String x:Key="Weight">Weight</sys:String>
+    <sys:String x:Key="LastDonationDate">Last donation</sys:String>
+    <sys:String x:Key="BloodBankName">Blood Bank name</sys:String>
+    <sys:String x:Key="Diseases">Diseases</sys:String>
+    <sys:String x:Key="Select">Select</sys:String>
+    <sys:String x:Key="Registration">Registration</sys:String>
+    <sys:String x:Key="UserRegistered">You are now registered</sys:String>
+    <sys:String x:Key="Empty">Empty</sys:String>
+    <sys:String x:Key="DatePicker">DD/MM/YYYY</sys:String>
+    <sys:String x:Key="DatePickerError">Invalid</sys:String>
+
+
+    <!--RECIPIENT REGISTRATION PAGE-->
+    <sys:String x:Key="RecipientRegTitle">ENTER RECIPIENT INFORMATION</sys:String>
+    <sys:String x:Key="HospitalSelect">Select hospital</sys:String>
+    <!--MEDICAL INSTITUTION SELECT PAGE-->
+    <sys:String x:Key="Website">Website</sys:String>
+    <sys:String x:Key="TypeOfMedInst">Institution type</sys:String>
+    <sys:String x:Key="Hospital">Hospital</sys:String>
+    <sys:String x:Key="BloodBank">Blood bank</sys:String>
+    <!--STOCK REGISTER PAGE-->
+    <sys:String x:Key="StockRegisterTitle">ENTER STOCK</sys:String>
+    <sys:String x:Key="Quantity">Quantity</sys:String>
+    <sys:String x:Key="Rate">Rate</sys:String>
+    <!--DASHBOARD WINDOW-->
+    <sys:String x:Key="Home">Home</sys:String>
+    <sys:String x:Key="RequestBlood">Request blood</sys:String>
+    <sys:String x:Key="ViewRequests">View requests</sys:String>
+    <sys:String x:Key="Orders">Orders</sys:String>
+    <sys:String x:Key="Settings">Settings</sys:String>
+    <sys:String x:Key="LogOut">Log out</sys:String>
+    <sys:String x:Key="UserManual">User manual</sys:String>
+    <sys:String x:Key="UserManualLocation">Manual-en.pdf</sys:String>
+    <sys:String x:Key="LogOutQuestion">Log out?</sys:String>
+    <!--SETTINGS PAGE-->
+    <sys:String x:Key="ChangeAddress">Change address</sys:String>
+    <sys:String x:Key="Type">Type</sys:String>
+    <sys:String x:Key="NewPasswordLabel">New password</sys:String>
+    <sys:String x:Key="ConfirmPasswordLabel">Confirm password</sys:String>
+    <sys:String x:Key="UpdatePhoneSuccessful">Update phone successful</sys:String>
+    <sys:String x:Key="UpdateWebsiteSuccessful">Update webiste successful</sys:String>
+    <sys:String x:Key="UpdateEmailSuccessful">Update email successful</sys:String>
+    <sys:String x:Key="UpdateAddressSuccessful">Update address successful</sys:String>
+    <sys:String x:Key="UpdateCitySuccessful">Update city successful</sys:String>
+    <sys:String x:Key="UpdateUsernameSuccessful">Update username successful</sys:String>
+    <sys:String x:Key="UpdatePasswordSuccessful">Update password successful</sys:String>
+    <sys:String x:Key="UpdatePasswordMissmatach">Password missmatch</sys:String>
+    <sys:String x:Key="UpdatePasswordCurrentMissmatach">Current password is invalid</sys:String>
+    <!--ORDERS PAGE-->
+    <sys:String x:Key="RequestDate">Request date</sys:String>
+    <sys:String x:Key="DeliveryDate">Delivery date</sys:String>
+    <!--  USER HOME PAGE  -->
+    <sys:String x:Key="BloodBanksList">List of blood banks</sys:String>
+    <sys:String x:Key="BloodBanks">Blood banks</sys:String>
+    <sys:String x:Key="NoAvailableBloodBanks">No Blood banks available</sys:String>
+    <sys:String x:Key="Donors">Donors</sys:String>
+    <sys:String x:Key="DonorsList">List of donors</sys:String>
+    <sys:String x:Key="NoMatchingDonorsAvailable">No donors available with matching blood group</sys:String>
+
+    <!--MI HOME PAGE-->
+    <sys:String x:Key="Patients">Patients</sys:String>
+    <sys:String x:Key="PatientsList">List of patients</sys:String>
+    <sys:String x:Key="NoPatients">No patients admitted</sys:String>
+    <sys:String x:Key="HospitalsReqBloodList">List of hospitals requesting blood</sys:String>
+    <sys:String x:Key="None">None</sys:String>
+
+    <!--UserBloodRequestPage-->
+    <sys:String x:Key="SelectDonors">Select any donor from the following list to request blood:</sys:String>
+    <sys:String x:Key="SelectYourDonors">Select donor from the following list who donated blood to you</sys:String>
+    <sys:String x:Key="RecievedBlood">Recieved blood</sys:String>
+    <sys:String x:Key="OrderID">Order Id</sys:String>
+    <sys:String x:Key="RecieveDate">Recieve date</sys:String>
+    <sys:String x:Key="RecieveBlood">Recieve blood</sys:String>
+
+    <!--User View Requests-->
+    <sys:String x:Key="SelectRecipient">Select recipient from the list</sys:String>
+    <sys:String x:Key="SelectBloodBank">Select blood bank from the list</sys:String>
+    <sys:String x:Key="RecipientDetails">Recipient details</sys:String>
+    <sys:String x:Key="BloodBankDetails">Blood bank details</sys:String>
+    <sys:String x:Key="HospitalDetails">Hospital details</sys:String>
+    <sys:String x:Key="DonationSuccess">Donation recorded successfully</sys:String>
+
+    <!-- MI BLOOD REQUEST PAGE-->
+    <sys:String x:Key="SelectBloodBankReq">Select blood bank from the following list to request blood</sys:String>
+    <sys:String x:Key="SelectBloodBankSup">Select blood bank from the following list who suplied blood to you</sys:String>
+    <sys:String x:Key="InvalidQuantity">Enter a valid number as quantity</sys:String>
+    <sys:String x:Key="InvalidQuantityDate">Enter a valid quantity and date</sys:String>
+    <sys:String x:Key="OrderSuccess">Order placed successfully</sys:String>
+    <!--MI VIEW REQUEST-->
+    <sys:String x:Key="ViewRequestsBlood">View requests for blood</sys:String>
+
+
+</ResourceDictionary>

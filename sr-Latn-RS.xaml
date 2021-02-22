@@ -1,0 +1,147 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--EXCEPTIONS-->
+    <sys:String x:Key="LoginPageException">Izuzetak prilikom prijave</sys:String>
+    <sys:String x:Key="RegistrationPageException">Izuzetak prilikom registracije</sys:String>
+    <sys:String x:Key="DonorRegistrationException">Izuzetak prilikom registacije davaoca</sys:String>
+    <sys:String x:Key="RecipientRegistrationException">Izuzetak prilikom registracije primaoca</sys:String>
+    <sys:String x:Key="HospitalRegistrationException">Izuzetak prilikom registracije bolnice</sys:String>
+    <sys:String x:Key="BBRegistrationException">Izuzetak prilikom registracije banke krvi</sys:String>
+    <sys:String x:Key="StockRegistrationException">Izuzetak prilikom registracije zaliha</sys:String>
+    <sys:String x:Key="UpdatePhoneException">Izuzetak prilikom promjene telefonskog broja</sys:String>
+    <sys:String x:Key="UpdateWebsiteException">Izuzetak prilikom promjene web adrese</sys:String>
+    <sys:String x:Key="UpdateEmailException">Izuzetak prilikom promjene email-a</sys:String>
+    <sys:String x:Key="UpdateAddressException">Izuzetak prilikom promjene adrese</sys:String>
+    <sys:String x:Key="UpdateCityException">Izuzetak prilikom promjene grada</sys:String>
+    <sys:String x:Key="UpdateUsernameException">Izuzetak prilikom promjene korisničkog imena</sys:String>
+    <sys:String x:Key="UpdatePasswordException">Izuzetak prilikom promjene lozinke</sys:String>
+    <sys:String x:Key="HomePageException">Izuzetak kod početne stranice</sys:String>
+    <sys:String x:Key="OrdersUpdateException">Izuzetak kod rada sa narudžbama</sys:String>
+    <sys:String x:Key="Exception">Izuzetak</sys:String>
+
+    <!-- LOGIN_PAGE-->
+    <sys:String x:Key="UsernameLabel">Korisničko ime</sys:String>
+    <sys:String x:Key="PasswordLabel">Password</sys:String>
+    <sys:String x:Key="LoginLabel">PRIJAVA</sys:String>
+    <sys:String x:Key="RegisterLabel">REGISTRACIJA</sys:String>
+    <sys:String x:Key="InvalidLoginLabel">Korisničko ime ili lozinka nisu tačni</sys:String>
+    <sys:String x:Key="EmptyLoginLabel">Unesite korisničko ime i lozinku</sys:String>
+    <sys:String x:Key="NotFoundLoginLabel">Korisnik nije pronađen</sys:String>
+    <!--EXIT MESSAGE BOX-->
+    <sys:String x:Key="ExitQuestion">Da li želite da izađete?</sys:String>
+    <sys:String x:Key="Confirm">Potvrdi</sys:String>
+    <sys:String x:Key="Yes">Da</sys:String>
+    <sys:String x:Key="No">Ne</sys:String>
+    <!--REGISTER SELECT PAGE-->
+    <sys:String x:Key="RSP_Question">Registrujete se kao?</sys:String>
+    <sys:String x:Key="RSP_Individual">Fizičko lice</sys:String>
+    <sys:String x:Key="RSP_MedicalInstitution">Ustanova</sys:String>
+    <sys:String x:Key="RSP_Back">Nazad</sys:String>
+    <!--INDIVIDUAL SELECT PAGE-->
+    <sys:String x:Key="Name">Ime</sys:String>
+    <sys:String x:Key="SSN">JMBG</sys:String>
+    <sys:String x:Key="Phone">Broj telefona</sys:String>
+    <sys:String x:Key="Email">E-mail</sys:String>
+    <sys:String x:Key="Address">Adresa</sys:String>
+    <sys:String x:Key="City">Grad</sys:String>
+    <sys:String x:Key="BloodGroup">Krvna grupa</sys:String>
+    <sys:String x:Key="TypeOfUser">Vrsta korisnika</sys:String>
+    <sys:String x:Key="Donor">Davalac</sys:String>
+    <sys:String x:Key="Recepient">Primalac</sys:String>
+    <sys:String x:Key="Enter">Unesi...</sys:String>
+    <sys:String x:Key="IncompleteReg">Nisu sva polja popunjena</sys:String>
+    <sys:String x:Key="UsernameUnavailable">Korisničko ime nije dostupno</sys:String>
+    <sys:String x:Key="PhoneNumberInvalid">Telefonski broj nije validan</sys:String>
+    <!--DONOR REGISTRATION PAGE-->
+    <sys:String x:Key="DonorRegTitle">UNESITE INFORMACIJE O DAVAOCU</sys:String>
+    <sys:String x:Key="DateOfBirth">Datum rođenja</sys:String>
+    <sys:String x:Key="Weight">Težina</sys:String>
+    <sys:String x:Key="LastDonationDate">Posljednja donacija</sys:String>
+    <sys:String x:Key="BloodBankName">Banka krvi</sys:String>
+    <sys:String x:Key="Diseases">Bolesti</sys:String>
+    <sys:String x:Key="Select">Odaberi</sys:String>
+    <sys:String x:Key="Registration">Registracija</sys:String>
+    <sys:String x:Key="UserRegistered">Uspješno ste se registrovali</sys:String>
+    <sys:String x:Key="Empty">Prazno</sys:String>
+    <sys:String x:Key="DatePicker">DD/MM/GGGG</sys:String>
+    <sys:String x:Key="DatePickerError">Neispravan datum</sys:String>
+
+    <!--RECIPIENT REGISTRATION PAGE-->
+    <sys:String x:Key="RecipientRegTitle">UNESITE INFORMACIJE O PRIMAOCU</sys:String>
+    <sys:String x:Key="HospitalSelect">Odaberite bolnicu</sys:String>
+    <!--MEDICAL INSTITUTION SELECT PAGE-->
+    <sys:String x:Key="Website">Web adresa</sys:String>
+    <sys:String x:Key="TypeOfMedInst">Vrsta ustanove</sys:String>
+    <sys:String x:Key="Hospital">Bolnica</sys:String>
+    <sys:String x:Key="BloodBank">Banka krvi</sys:String>
+    <!--STOCK REGISTER PAGE-->
+    <sys:String x:Key="StockRegisterTitle">Unesite zalihe krvi </sys:String>
+    <sys:String x:Key="Quantity">Količina</sys:String>
+    <sys:String x:Key="Rate">Stopa</sys:String>
+    <!--DASHBOARD WINDOW-->
+    <sys:String x:Key="Home">Početna</sys:String>
+    <sys:String x:Key="RequestBlood">Traži krv</sys:String>
+    <sys:String x:Key="ViewRequests">Pregled zahtjeva</sys:String>
+    <sys:String x:Key="Orders">Narudžbe</sys:String>
+    <sys:String x:Key="Settings">Podešavanja</sys:String>
+    <sys:String x:Key="LogOut">Odjava</sys:String>
+    <sys:String x:Key="UserManual">Uputstvo</sys:String>
+    <sys:String x:Key="LogOutQuestion">Odjava?</sys:String>
+    <sys:String x:Key="UserManualLocation">Manual-sr.pdf</sys:String>
+    <!-- SETTINGS PAGE -->
+    <sys:String x:Key="ChangeAddress">Promijeni adresu</sys:String>
+    <sys:String x:Key="Type">Tip</sys:String>
+    <sys:String x:Key="NewPasswordLabel">Nova lozinka</sys:String>
+    <sys:String x:Key="ConfirmPasswordLabel">Potvrdi lozinku</sys:String>
+    <sys:String x:Key="UpdatePhoneSuccessful">Promjena telefonskog broja je uspješna</sys:String>
+    <sys:String x:Key="UpdateWebsiteSuccessful">Promjena web adrese je uspješna</sys:String>
+    <sys:String x:Key="UpdateEmailSuccessful">Promjena email-a je uspješna</sys:String>
+    <sys:String x:Key="UpdateAddressSuccessful">Promjena adrese je uspješna</sys:String>
+    <sys:String x:Key="UpdateCitySuccessful">Promjena grada je uspješna</sys:String>
+    <sys:String x:Key="UpdateUsernameSuccessful">Promjena korisničkog imena je uspješna</sys:String>
+    <sys:String x:Key="UpdatePasswordSuccessful">Promjena lozinke je uspješna</sys:String>
+    <sys:String x:Key="UpdatePasswordMissmatch">Lozinke se ne podudaraju</sys:String>
+    <sys:String x:Key="UpdatePasswordCurrentMissmatch">Trenutna lozinka nije tačna</sys:String>
+    <!--ORDERS PAGE-->
+    <sys:String x:Key="RequestDate">Datum narudžbe</sys:String>
+    <sys:String x:Key="DeliveryDate">Datum dostave</sys:String>
+    <!--  USER HOME PAGE  -->
+    <sys:String x:Key="BloodBanksList">Banke krvi</sys:String>
+    <sys:String x:Key="BloodBanks">Banke krvi</sys:String>
+    <sys:String x:Key="NoAvailableBloodBanks">Nema dostupnih banki krvi</sys:String>
+    <sys:String x:Key="Donors">Davaoci</sys:String>
+    <sys:String x:Key="DonorsList">Davaoci</sys:String>
+    <sys:String x:Key="NoMatchingDonorsAvailable">Nema davaoca sa odgovarajućom krvnom grupom</sys:String>
+    <!--MI HOME PAGE-->
+    <sys:String x:Key="Patients">Pacijenti</sys:String>
+    <sys:String x:Key="PatientsList">Lista pacijenata</sys:String>
+    <sys:String x:Key="NoPatients">Nema primljenih pacijenata</sys:String>
+    <sys:String x:Key="HospitalsReqBloodList">Lista bolnica kojima treba krv</sys:String>
+    <sys:String x:Key="None">Nema</sys:String>
+
+    <!--UserBloodRequestPage-->
+    <sys:String x:Key="SelectDonors">Odaberite davaoca krvi :</sys:String>
+    <sys:String x:Key="SelectYourDonors">Odaberite davaoca krvi koji je donirao krv vama</sys:String>
+    <sys:String x:Key="RecievedBlood">Primljena krv</sys:String>
+    <sys:String x:Key="OrderID">Broj narudžbe</sys:String>
+    <sys:String x:Key="RecieveDate">Datum primanja</sys:String>
+    <sys:String x:Key="RecieveBlood">Primi krv</sys:String>
+    <!--User View Requests-->
+    <sys:String x:Key="SelectRecipient">Odaberi primaca</sys:String>
+    <sys:String x:Key="SelectBloodBank">Odaberi banku krvi</sys:String>
+    <sys:String x:Key="RecipientDetails">Informacije o primaocu</sys:String>
+    <sys:String x:Key="BloodBankDetails">Informacije o banki krvi</sys:String>
+    <sys:String x:Key="HospitalDetails">Informacije o bolnici</sys:String>
+    <sys:String x:Key="DonationSuccess">Donacija izvršena uspješno</sys:String>
+
+    <!-- MI BLOOD REQUEST PAGE-->
+    <sys:String x:Key="SelectBloodBankReq">Odaberi banku krvi od koje ćete tražiti krv</sys:String>
+    <sys:String x:Key="SelectBloodBankSup">Odaberi banku krvi koja je nabavljala krv za vas</sys:String>
+    <sys:String x:Key="InvalidQuantity">Unesite validnu količinu</sys:String>
+    <sys:String x:Key="InvalidQuantityDate">Unesite validnu količinu i datum</sys:String>
+    <sys:String x:Key="OrderSuccess">Narudžba izvršena uspješno</sys:String>
+    <sys:String x:Key="ViewRequestsBlood">Pregled zahtjeva</sys:String>
+
+</ResourceDictionary>
