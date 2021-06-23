@@ -1,1 +1,10 @@
 # BloodBanker
+![Screenshot](/Opis/Opis-1.jpg)
+![Screenshot](/Opis/Opis-2.jpg)
+![Screenshot](/Opis/Opis-3.jpg)
+![Screenshot](/Opis/Opis-4.jpg)
+![Screenshot](/Opis/Opis-5.jpg)
+![Screenshot](/Opis/Opis-6.jpg)
+![Screenshot](/Opis/Opis-7.jpg)
+![Screenshot](/Opis/Opis-8.jpg)
+![Screenshot](/Opis/Opis-9.jpg)
